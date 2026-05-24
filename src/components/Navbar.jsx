@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' ? (
+              link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' ? (
                 <Link
                   key={link.name}
                   to={link.href}
@@ -83,7 +83,7 @@ const Navbar = () => {
           >
             <div className="flex flex-col space-y-4 px-6">
               {navLinks.map((link) => (
-                link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' ? (
+                link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' ? (
                   <Link
                     key={link.name}
                     to={link.href}
