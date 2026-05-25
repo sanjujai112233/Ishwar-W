@@ -13,6 +13,8 @@ const navLinks = [
   { name: 'Clients', href: '/clients', hash: null },
   { name: 'Director', href: '/director', hash: null },
   { name: 'Ports', href: '/ports', hash: null },
+  { name: 'Certificates', href: '/certificates', hash: null },
+  { name: 'Contacts', href: '/contact', hash: null },
 ];
 
 const Navbar = () => {

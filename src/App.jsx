@@ -16,6 +16,7 @@ import GlobalPresence from './components/GlobalPresence';
 import Ports from './components/Ports';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
+import Certificates from './components/Certificates';
 
 const Home = () => {
   return (
@@ -113,6 +114,7 @@ function App() {
             <Route path="/mission" element={<MissionPage />} />
             <Route path="/clients" element={<ClientsPage />} />
             <Route path="/director" element={<DirectorPage />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/ports" element={<Ports />} />
           </Routes>
         </main>
@@ -123,3 +125,4 @@ function App() {
 }
 
 export default App;
+

@@ -23,7 +23,7 @@ const DirectorMessage = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2000&auto=format&fit=crop"
+                src="/ceo.png"
                 alt="Director"
                 className="w-full h-full object-cover"
               />
@@ -32,7 +32,7 @@ const DirectorMessage = () => {
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="glass-card p-5 rounded-xl border border-white/10 backdrop-blur-md">
                   <h4 className="text-white font-bold text-xl">Director's Message</h4>
-                  <p className="text-brand-accent text-sm font-medium uppercase tracking-wider mt-1">Ishwar Logistics Pvt. Ltd.</p>
+                  <p className="text-brand-accent text-sm font-medium uppercase tracking-wider mt-1">Dharmendra Jain</p>
                 </div>
               </div>
             </div>
