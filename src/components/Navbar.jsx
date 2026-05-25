@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' ? (
+              link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' || link.href === '/certificates' ? (
                 <Link
                   key={link.name}
                   to={link.href}
@@ -51,13 +51,13 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ) : (
-                <a
-                  key={link.name}
-                  href={location.pathname === '/' ? link.hash : link.href}
-                  className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
-                >
-                  {link.name}
-                </a>
+                <Link
+    key={link.name}
+    to={location.pathname === '/' ? (link.hash || '/') : link.href}
+    className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+  >
+    {link.name}
+  </Link>
               )
             ))}
             <Link to="/contact" className="px-5 py-2 rounded-full bg-brand-blue text-white text-sm font-medium hover:bg-brand-accent transition-colors shadow-[0_0_15px_rgba(14,165,233,0.3)]">
@@ -85,7 +85,7 @@ const Navbar = () => {
           >
             <div className="flex flex-col space-y-4 px-6">
               {navLinks.map((link) => (
-                link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' ? (
+                link.href === '/mission' || link.href === '/clients' || link.href === '/director' || link.href === '/contact' || link.href === '/ports' || link.href === '/certificates' ? (
                   <Link
                     key={link.name}
                     to={link.href}
